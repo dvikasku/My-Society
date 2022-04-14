@@ -5,7 +5,7 @@ const User = require('../models/User');
 const Complain = require('../models/Complain');
 const { body, validationResult } = require('express-validator');
 
-// ROUTE 1: Get All the complains using: GET "/api/compain/fetchcompalin". Login required
+// ROUTE 1: Get All the complains using: GET "/api/complain/fetchcomplain". Login required
 router.get('/fetchcomplain', fetchuser, async (req, res) => {
     try {
         const compain = await Complain.find({ user: req.user.id });
