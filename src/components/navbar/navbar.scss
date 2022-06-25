@@ -13,20 +13,16 @@
       align-items: center;
       justify-content: space-between;
   
-      .search {
+      .top {
         display: flex;
         align-items: center;
-        border: 0.5px solid lightgray;
-        padding: 3px;
-  
-        input {
-          border: none;
-          outline: none;
-          background: transparent;
-  
-          &::placeholder {
-            font-size: 12px;
-          }
+        justify-content: center;
+
+        .logo {
+          padding-left: 30px;
+          font-size: 20px;
+          font-weight: bold;
+          color: #6439ff;
         }
       }
   

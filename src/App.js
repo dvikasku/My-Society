@@ -6,7 +6,7 @@ import Login from './components/auth/Login';
 import Signup from './components/auth/Signup';
 import Ahome from './components/admin/home/Ahome';
 import Uhome from './components/user/Uhome';
-import Navbar from './components/Navbar'
+import Navbar from './components/navbar/Navbar'
 
 function App() {
   return (

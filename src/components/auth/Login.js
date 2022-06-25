@@ -29,12 +29,12 @@ const Login = () => {
             });
             // navigate('/home');
             const user = await response.json()
-            console.log(user);
+            // console.log(user);
             if (user.role === 1){
-                navigate('/ahome');
+                navigate('/ahome',{state:user});
             }
             else{
-                navigate('/uhome');
+                navigate('/uhome',{state:user});
             }
         }
         else{

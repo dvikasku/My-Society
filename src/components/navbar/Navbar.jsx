@@ -3,24 +3,27 @@ import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
+import LoginIcon from '@mui/icons-material/Login';
 import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
-import { useContext } from "react";
+import Button from '@mui/material/Button';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
   return (
     <div className="navbar">
       <div className="wrapper">
-        <div className="search">
-          <input type="text" placeholder="Search..." />
-          <SearchOutlinedIcon />
-        </div>
+      <div className="top">
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <span className="logo">My Society</span>
+            </Link>
+          </div>
         <div className="items">
           <div className="item">
             <LanguageOutlinedIcon className="icon" />
             English
           </div>
-          <div className="item">
+        {localStorage.getItem('token')? <><div className="item">
             <NotificationsNoneOutlinedIcon className="icon" />
             <div className="counter">1</div>
           </div>
@@ -37,7 +40,10 @@ const Navbar = () => {
               alt=""
               className="avatar"
             />
-          </div>
+          </div></>:<>
+              <LoginIcon className="icon" />
+              <Link to='/login'><Button >Login</Button></Link>
+              </>}
         </div>
       </div>
     </div>
