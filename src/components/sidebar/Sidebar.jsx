@@ -11,13 +11,17 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import { Link } from "react-router-dom";
-import Home from "../Home";
+import { Link,useNavigate } from "react-router-dom";
+// import Home from "../Home";
+import { useAuth } from '../auth/auth'
 
 const Sidebar = () => {
+  const navigate = useNavigate()
+  const auth = useAuth()
   const logout = () => {
     localStorage.removeItem('token');
-    window.location.href = "/login";
+    auth.logout()
+    navigate('/')
   };
     return (
         <div className="sidebar">

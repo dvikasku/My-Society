@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from './auth'
 
 const Login = () => {
     const [credentials, setCredentials] = useState({email: "", password: ""}) 
     let navigate = useNavigate();
-
+    const auth = useAuth()
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -28,13 +29,16 @@ const Login = () => {
                 },
             });
             // navigate('/home');
-            const user = await response.json()
+            const users = await response.json()
+            // setUser(users.role)
+            // console.log(user)
+            auth.login(users)
             // console.log(user);
-            if (user.role === 1){
-                navigate('/ahome',{state:user});
+            if (users.role === 1){
+                navigate('/ahome',{state:users}, { replace: true });
             }
             else{
-                navigate('/uhome',{state:user});
+                navigate('/uhome',{state:users}, { replace: true });
             }
         }
         else{

@@ -1,21 +1,20 @@
 import Sidebar from '../../sidebar/Sidebar'
-import Navbar from '../../navbar/Navbar'
 import Widget from '../../widget/Widget'
 import Table from '../../notices/Table'
 import "./home.scss"
 import React, { useEffect} from 'react'
-import { useNavigate,useLocation } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { useAuth } from '../../auth/auth'
 
 const Ahome = (props) => {
   const navigate = useNavigate()
-  const location = useLocation();
+  const auth = useAuth()
 
 	useEffect(() => {
 		const token = localStorage.getItem('token')
-    // console.log(props.state.role)
+    // console.log(auth.user)
 		if (token) {
-    // const user = await response.json()
-			if (location.state.role !== 1) {
+			if (auth.user.role !== 1) {
 				localStorage.removeItem('token')
 				navigate('/login')
 			}
@@ -30,7 +29,6 @@ const Ahome = (props) => {
     <div className="home">
       <Sidebar />
       <div className="homeContainer">
-        {/* <Navbar /> */}
         <div className="widgets">
           <Widget type="user" />
           <Widget type="order" />

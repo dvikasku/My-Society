@@ -7,10 +7,12 @@ import Signup from './components/auth/Signup';
 import Ahome from './components/admin/home/Ahome';
 import Uhome from './components/user/Uhome';
 import Navbar from './components/navbar/Navbar'
+import { AuthProvider } from './components/auth/auth'
 
 function App() {
   return (
     <div className="App">
+      <AuthProvider >
             <Router>
         <Navbar />
         <Routes>
@@ -21,6 +23,7 @@ function App() {
         <Route path='/ahome' element={<Ahome/>}/>      
         </Routes>
       </Router>
+      </AuthProvider>
     </div>
   );
 }

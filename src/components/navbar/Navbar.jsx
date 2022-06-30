@@ -1,15 +1,14 @@
 import "./navbar.scss";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import LoginIcon from '@mui/icons-material/Login';
 import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
+import { useAuth } from '../auth/auth'
 
 const Navbar = () => {
-
+  const auth = useAuth()
   return (
     <div className="navbar">
       <div className="wrapper">
@@ -19,11 +18,7 @@ const Navbar = () => {
             </Link>
           </div>
         <div className="items">
-          <div className="item">
-            <LanguageOutlinedIcon className="icon" />
-            English
-          </div>
-        {localStorage.getItem('token')? <><div className="item">
+        {auth.user? <><div className="item">
             <NotificationsNoneOutlinedIcon className="icon" />
             <div className="counter">1</div>
           </div>
@@ -40,6 +35,9 @@ const Navbar = () => {
               alt=""
               className="avatar"
             />
+            <div className="item">
+            {auth.user.name}
+          </div>
           </div></>:<>
               <LoginIcon className="icon" />
               <Link to='/login'><Button >Login</Button></Link>
