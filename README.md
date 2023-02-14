@@ -5,7 +5,6 @@ It is capable of simplifying everyday living for your housing society.
 Manage accounts, due payments, resolve complaints and keep the community up-to-date with all that’s going on in the society-to a single click.
 Easy for the management committee and residents.
 
-### [Deployed website link](https://esociety-fdbd.onrender.com)
 
 ## User types
 
@@ -55,18 +54,6 @@ Provide flexibility to members for managing and updating registered member detai
 
 At this point, you have all the necessary files to run the projet. You will still need to configure your MongoDB database in .env file.
 
-## Contributions
-<a href="https://github.com/abhijeetpandit7/e-society/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=abhijeetpandit7/e-society" />
-</a>
 
-<img src= 'https://user-images.githubusercontent.com/65078610/112977547-d114cd00-9173-11eb-9768-8dc29a38a98d.png' width="1200">
-<img src= 'https://user-images.githubusercontent.com/65078610/112977718-00c3d500-9174-11eb-8271-193384b88b5c.png' width="1200">
-<img src= 'https://user-images.githubusercontent.com/65078610/112977767-0e795a80-9174-11eb-9f42-e8eb382e0c51.png' width="1200">
-<img src= 'https://user-images.githubusercontent.com/65078610/112977790-1933ef80-9174-11eb-8dd9-745923ab565d.png' width="1200">
-<img src= 'https://user-images.githubusercontent.com/65078610/112977836-27820b80-9174-11eb-8175-19da8f9707ad.png' width="1200">
-<img src= 'https://user-images.githubusercontent.com/65078610/112977870-336dcd80-9174-11eb-8fa2-49480ba713e5.png' width="1200">
-<img src= 'https://user-images.githubusercontent.com/65078610/112977895-3d8fcc00-9174-11eb-87d3-732ec2ecd524.png' width="1200">
-<img src= 'https://user-images.githubusercontent.com/65078610/112977938-4da7ab80-9174-11eb-93f1-562a30f8bb01.png' width="1200">
-<img src= 'https://user-images.githubusercontent.com/65078610/112977983-59936d80-9174-11eb-9693-24ff4572ab4d.png' width="1200">
-<img src= 'https://user-images.githubusercontent.com/65078610/112978005-644e0280-9174-11eb-9ae2-35922ab08bcd.png' width="1200">
+
+
