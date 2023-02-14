@@ -1,0 +1,24 @@
+<!-- Footer content -->
+  <footer>
+    <div class="container home-container footer-head">
+      <div class="box">
+        <h2 id="text1">About Us</h2>
+        <p id="text2">
+          Society management app, for simplifying everyday tasks of your housing society. 
+        </p>
+      </div>
+      
+    
+  </footer>
+  
+  <script type="text/javascript">
+    $(document).ready(function () {
+      let url = window.location;
+      $('ul.nav a').filter(function() {
+        return this.href == url;
+      }).parent().addClass('active');
+    });
+  </script> 
+</body>
+
+</html>  

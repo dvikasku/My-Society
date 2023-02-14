@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# [E-Society](https://esociety-fdbd.onrender.com) - Community Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+E-Society is a modular, API-Centric, and multi-tenant Community Management System. 
+It is capable of simplifying everyday living for your housing society. 
+Manage accounts, due payments, resolve complaints and keep the community up-to-date with all that’s going on in the society-to a single click.
+Easy for the management committee and residents.
 
-## Available Scripts
+### [Deployed website link](https://esociety-fdbd.onrender.com)
 
-In the project directory, you can run:
+## User types
 
-### `npm start`
+- General user - The member in the housing society. Can view community residents, access noticeboard & maintenance bills, bill payments. And raise a ticket to the admin.
+- Administrator – The management committee of the community is known as the administrator. 
+  Holds various powers like registering new community, approving new residents into respective community, post to noticeboard, update maintenance bills, track payment dues and handle user complaints.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Admin Features:
+- Account Management  
+New member accounts created will be approved by the respective society administrator for activation. Resident will be joining the registered community only after admin approval.
+- Notices / Circulars  
+It gives admin the option to upload the notice, circulars and announcements on the digital noticeboard for easy access by the members 24x7 basis.
+- Bill Management  
+Admin can generate maintenance bills of the resident members instantaneously, enabling members to easily pay their dues online. Admin is provided with tracking feature of member dues 	payment.
+- Complaint Management  
+Admin can track to quick closure & provide feedback on raised tickets by society members.
+- Emergency Contacts  
+Admin can configure the emergency number list with numbers of local police station, ambulance or pharmacy; accessible to every member.
+- Profile Management  
+Provide flexibility to admin for managing and updating registered society details.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Member Features:
+- Member's Communication  
+Provide a platform to the members to connect with other members of the respective society.
+- Notices / Circulars  
+Digital noticeboard helps members to read each & every notice / circular society is publishing. Members can access all past / latest circulars, AGM notices which the society has published.
+- Online Payment  
+Check maintenance bill details. Members can download or view their monthly bills any time and from anywhere. While members can view the bill details online, they can instantaneously make the payment using Credit Card or Debit Card. After the successful payment the receipt of their payments are generated instantly and always available for download.
+- Complaint Management  
+Members can easily raise maintenance requests at personal or community level and track the status of their complaints.
+- Emergency Contacts  
+Always, be prepared for emergencies. It provides the emergency number list with numbers of local police station, ambulance or pharmacy; configured by society admin.
+- Profile Management  
+Provide flexibility to members for managing and updating registered member details.
 
-### `npm test`
+## Specifications
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- MongoDB
+- ExpressJS
+- NodeJS
+- Bootstrap
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. `npm install`
+2. `node server.js`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+At this point, you have all the necessary files to run the projet. You will still need to configure your MongoDB database in .env file.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributions
+<a href="https://github.com/abhijeetpandit7/e-society/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=abhijeetpandit7/e-society" />
+</a>
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src= 'https://user-images.githubusercontent.com/65078610/112977547-d114cd00-9173-11eb-9768-8dc29a38a98d.png' width="1200">
+<img src= 'https://user-images.githubusercontent.com/65078610/112977718-00c3d500-9174-11eb-8271-193384b88b5c.png' width="1200">
+<img src= 'https://user-images.githubusercontent.com/65078610/112977767-0e795a80-9174-11eb-9f42-e8eb382e0c51.png' width="1200">
+<img src= 'https://user-images.githubusercontent.com/65078610/112977790-1933ef80-9174-11eb-8dd9-745923ab565d.png' width="1200">
+<img src= 'https://user-images.githubusercontent.com/65078610/112977836-27820b80-9174-11eb-8175-19da8f9707ad.png' width="1200">
+<img src= 'https://user-images.githubusercontent.com/65078610/112977870-336dcd80-9174-11eb-8fa2-49480ba713e5.png' width="1200">
+<img src= 'https://user-images.githubusercontent.com/65078610/112977895-3d8fcc00-9174-11eb-87d3-732ec2ecd524.png' width="1200">
+<img src= 'https://user-images.githubusercontent.com/65078610/112977938-4da7ab80-9174-11eb-93f1-562a30f8bb01.png' width="1200">
+<img src= 'https://user-images.githubusercontent.com/65078610/112977983-59936d80-9174-11eb-9693-24ff4572ab4d.png' width="1200">
+<img src= 'https://user-images.githubusercontent.com/65078610/112978005-644e0280-9174-11eb-9ae2-35922ab08bcd.png' width="1200">
